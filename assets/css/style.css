@@ -224,8 +224,8 @@ a {
     width: 2rem;
     border-radius: 50%;
     background: #f27d17;
-    margin-top: -26px;
-    margin-left: 41px;
+    margin-top: -28px;
+    margin-left: 32px;
 }
 
 .circle-mark-3 {
@@ -243,8 +243,9 @@ a {
     border-radius: 50%;
     background: #238ada57;
     position: absolute;
-    top: 31px;
-    left: 12px;
+    margin-top: -47px;
+    margin-left: 41px;
+    ;
     z-index: 1;
 }
 
