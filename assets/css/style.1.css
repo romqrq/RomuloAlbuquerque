@@ -1,0 +1,388 @@
+.card-started {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    z-index: 11;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+}
+
+.card-started .profile {
+    padding: 210px 50px 50px 50px;
+    position: relative;
+    height: 100%;
+    background: #fff;
+    text-align: center;
+    z-index: 10;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+}
+
+.card-started .profile .slide {
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 300px;
+    background-color: #626262;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    -khtml-border-radius: 4px 4px 0 0;
+}
+
+.card-inner.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+/*element.style {*/
+/*    position: relative;*/
+/*    overflow: hidden;*/
+/*    width: auto;*/
+/*    height: 570px;*/
+/*}*/
+
+.card-inner {
+    padding: 0;
+    position: absolute;
+    overflow: hidden;
+    left: 95%;
+    top: 15px;
+    width: 120%;
+    height: 570px;
+    background: #fff;
+    transform-origin: center left;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 8;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    transition: visibility 1s linear,opacity .5s linear;
+    -moz-transition: visibility 1s linear,opacity .5s linear;
+    -webkit-transition: visibility 1s linear,opacity .5s linear;
+    -o-transition: visibility 1s linear,opacity .5s linear;
+}
+
+.card-inner .card-wrap {
+    padding: 30px 30px 30px 60px;
+    position: relative;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+.card-inner.hidden {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Righteous');
+
+body {
+    /*background-color: #0366A0;*/
+    background: linear-gradient(-45deg, #57e5e8, #369dce, #7fd2ef, #71eace);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    font-family: "Ubuntu", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*-- Header --*/
+
+#header-menu {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    padding: 0;
+}
+
+.menu-buttons-ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background: white;
+    margin: 1rem;
+    border-radius: 5px;
+    box-shadow: -3px 6px 16px #00000070;
+}
+
+.menu-buttons-li {
+    flex: 1;
+    height: 4rem;
+    padding: 0.8rem 0;
+    box-shadow: 0px 0px 2px 0px #00000033;
+}
+
+.menu-buttons-li i {
+    font-size: 1.3rem;
+    display: block;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+
+/* The side navigation menu */
+
+.sidenav {
+    width: 45vw;
+    height: 70vh;
+    top: 15vh;
+    left: 45vw;
+    z-index: 1;
+    background-color: #dee2e6;
+    overflow-x: hidden;
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/*Main Feature Card*/
+
+.main-card-container {
+    margin-top: 6rem;
+}
+
+.card {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: -3px 6px 16px #00000070;
+}
+
+.card-body {
+    text-align: center;
+    padding: 1.5rem 0 0;
+}
+
+.card-img-top {
+    margin-bottom: -7rem;
+    margin-top: -15rem;
+    max-height: 30rem;
+}
+
+.top-image {
+    overflow: hidden;
+    max-height: 30vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.profile-picture {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    margin: auto;
+    width: 50vw;
+    max-width: 30rem;
+    box-shadow: -2px 2px 5px 1px rgba(0, 0, 0, .9);
+}
+
+.card-title {
+    font-family: "Righteous", sans-serif;
+}
+
+.card-sub-title {
+    color: #FF7F11;
+}
+
+.card-text {
+    font-family: "Ubuntu", sans-serif;
+}
+
+.contact-buttons {
+    width: 100%;
+    display: flex;
+    margin: 1rem 0 0.3rem;
+}
+
+.contact-button {
+    flex: 1;
+    height: 3rem;
+    box-shadow: 0px 0px 2px 0px #00000033;
+}
+
+.text-uppercase p {
+    margin: 0;
+}
+
+
+/*ABOUT CARD*/
+
+.about-card {
+    text-align: left;
+}
+
+.circle-mark {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: black;
+}
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    #sidenav-bar {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    #header-menu {
+        display: none;
+    }
+}
+
+/*Media queries for background*/
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}

@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Righteous');
+
+body {
+    /*background-color: #0366A0;*/
+    background: linear-gradient(-45deg, #a9feff, #046fa2, #a6fdff, #005984);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    font-family: "Ubuntu", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.bg-progress-bar {
+    background-color: #96c6ee;
+}
+
+/*-- Header --*/
+
+#header-menu {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    padding: 0;
+}
+
+.menu-buttons-ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background: white;
+    margin: 1rem;
+    border-radius: 5px;
+    box-shadow: -3px 6px 16px #00000070;
+}
+
+.menu-buttons-li {
+    flex: 1;
+    height: 4rem;
+    padding: 0.8rem 0;
+    box-shadow: 0px 0px 2px 0px #00000033;
+}
+
+.menu-buttons-li i {
+    font-size: 1.3rem;
+    display: block;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+
+/* The side navigation menu */
+
+.sidenav {
+    width: 45vw;
+    height: 70vh;
+    top: 15vh;
+    left: 45vw;
+    z-index: 1;
+    background-color: #dee2e6;
+    overflow-x: hidden;
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/*Main Feature Card*/
+
+.main-card-container {
+    margin-top: 6rem;
+}
+
+.main-card {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: -3px 6px 16px #00000070;
+}
+
+.card-body {
+    text-align: center;
+    padding: 1.5rem 0 0;
+}
+
+.card-img-top {
+    margin-bottom: -7rem;
+    margin-top: -15rem;
+    max-height: 30rem;
+}
+
+.top-image {
+    overflow: hidden;
+    max-height: 30vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.profile-picture {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    margin: auto;
+    width: 50vw;
+    max-width: 30rem;
+    box-shadow: -2px 2px 5px 1px rgba(0, 0, 0, .9);
+}
+
+.main-card-title {
+    font-family: "Righteous", sans-serif;
+}
+
+.card-sub-title {
+    color: #FF7F11;
+}
+
+.card-text {
+    font-family: "Ubuntu", sans-serif;
+    margin: 1rem auto;
+}
+
+.contact-buttons {
+    width: 100%;
+    display: flex;
+    margin: 1rem 0 0.3rem;
+}
+
+.contact-button {
+    flex: 1;
+    height: 3rem;
+    box-shadow: 0px 0px 2px 0px #00000033;
+}
+
+.text-uppercase p {
+    margin: 0;
+}
+
+
+/*ABOUT CARD*/
+
+.about-container {
+    margin: 1rem auto;
+}
+
+.about-card-body {
+    text-align: left;
+    padding: 2rem 1rem;
+}
+
+.about-card-title {
+    margin-bottom: 1.5rem;
+    font-family: "Righteous", sans-serif;
+    text-shadow: -2px 3px 5px #00000059;
+}
+
+.circle-mark {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background: #238ada7a;
+    margin-top: -62px;
+    margin-left: -5px;
+}
+
+.circle-mark-2 {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: #f27d17;
+    margin-top: -23px;
+    margin-left: 38px;
+}
+
+.circle-mark-3 {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: rgb(150, 220, 141);
+    margin-top: -39px;
+    margin-left: 86px;
+}
+
+.circle-mark-large {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: #238ada57;
+    position: absolute;
+    top: 31px;
+    left: 12px;
+    z-index: 1;
+}
+
+.resume-icon {
+    font-size: 3rem;
+    margin: 1rem 0 0.5rem;
+    background-color: rgb(150, 220, 141);
+    border-radius: 50%;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    ;
+}
+
+.resume-items h5 {
+    font-weight: 600;
+}
+
+.dobi-thumbnail img {
+    max-width: 100%;
+    box-shadow: -1px 3px 5px #0000004d;
+    margin-bottom: 1rem;
+}
+
+/*RESUME CARD*/
+
+.job-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.company-name {
+    text-transform: uppercase;
+}
+
+.work-date {
+    color: #949494;
+}
+
+.progress {
+    height: 0.75rem;
+    margin: 1rem 0.5rem;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    #sidenav-bar {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    #header-menu {
+        display: none;
+    }
+}
+
+/*Media queries for background*/
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
