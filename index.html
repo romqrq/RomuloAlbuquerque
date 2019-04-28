@@ -14,13 +14,13 @@
 </head>
 
 <body>
-    <header id="small-about">
+    <header>
         <!-- Menu Buttons -->
         <div class="container-fluid" id="header-menu">
             <div class="row">
                 <div class="col-12">
                     <ul class="menu-buttons-ul">
-                        <li class="menu-buttons-li">
+                        <li class="menu-buttons-li" onclick="topFunction()">
                             <a href="#small-about">
                             <i class="fas fa-user"></i>
                             <span style="font-family: Righteous;">About</span>
@@ -49,6 +49,8 @@
             </div>
         </div>
     </header>
+
+    <!--MAIN SECTION-->
     <section>
         <div class="container-fluid main-card-container">
             <div class="card main-card">
@@ -73,6 +75,7 @@
             </div>
         </div>
     </section>
+
     <!--ABOUT ME SECTION-->
     <section>
         <div class="container-fluid about-container">
@@ -122,6 +125,7 @@
             </div>
         </div>
     </section>
+
     <!--RESUME/WORK HISTORY SECTION-->
     <section>
         <div class="container-fluid about-container">
@@ -266,7 +270,7 @@
                             <div class="progress">
                                 <div class="progress-bar bg-progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <p>I am a great team player, following directions and respecting colleagues space. I have outstanding team building and interpersonal skills, I enjoy seeing people growing with my help and establishing relashionships where trust
+                            <p>I am a great team player, following directions and respecting colleagues space. I have outstanding team building and interpersonal skills, I enjoy seeing people growing with my help and establishing relationships where trust
                                 goes beyond reliability only and, where natural, extend the friendship beyond work environment.</p>
 
                             <i class="far fa-handshake resume-icon"></i>
@@ -329,40 +333,78 @@
                             </a>
                                 <p>This very page is my second website and the first where I wrote all the code on my own. I am aware that I'm just at the very beginning of this road, it is long and I can't deny how excited I am.</p>
                                 <p>With a changing colors background and JavaScript interactive animations this website was developed with a mobile-first approach giving great responsiveness but uncompromising the user experience on larger screens.</p>
-                                <p>As I get other projects done, I will be posting them here.</p>
                             </div>
+                            <div id="small-contact"></div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
+
+    <!--CONTACT SECTION-->
+    <section>
+        <div class="container-fluid about-container">
+            <div class="card main-card about-card">
+                <div class="card-body about-card-body">
+                    <h2 class="card-title about-card-title">Contact</h2>
+                    <div class="circle-mark"></div>
+                    <div class="circle-mark-2"></div>
+                    <div class="circle-mark-3"></div>
+                    <hr>
+                    <div class="card-text">
+                        <h3 class="card-title contact-card-title">Email</h3>
+                        <div class="resume-items">
+                            <h5>rjaalbuquerque@gmail.com</h5>
+                        </div>
+                        <h3 class="card-title contact-card-title">LinkedIn</h3>
+                        <div class="resume-items">
+                            <a href="https://www.linkedin.com/in/romalbuquerque/" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
     <!-- menu to open the sidenav -->
     <section id="sidenav-bar">
         <div class="container">
             <ul class="sidenav-buttons-ul">
                 <li class="sidenav-buttons-li">
-                    <span onclick="openAbout(); closeOthers1()" class="sidenav-button">
+                    <span onclick="openAbout()" class="sidenav-button">
                         <i class="fas fa-user"></i>
                             About
                         </span>
                     </a>
                 </li>
                 <li class="sidenav-buttons-li">
-                    <span onclick="openResume(); closeOthers2()" class="sidenav-button">
+                    <span onclick="openResume()" class="sidenav-button">
                         <i class="fas fa-user"></i>
                             Resume
                         </span>
                     </a>
                 </li>
                 <li class="sidenav-buttons-li">
-                    <span onclick="openPortfolio(); closeOthers3()" class="sidenav-button">
+                    <span onclick="openPortfolio()" class="sidenav-button">
                         <i class="fas fa-user"></i>
                             Portfolio
                         </span>
                     </a>
                 </li>
                 <li class="sidenav-buttons-li">
-                    <span onclick="openContact(); closeOthers4()" class="sidenav-button">
+                    <span onclick="openContact()" class="sidenav-button">
                         <i class="fas fa-user"></i>
                             Contact
                         </span>
@@ -372,52 +414,372 @@
         </div>
     </section>
     <section id="sidenav-about" class="sidenav li-2 li-3 li-4">
-        <div class="container-fluid about-card-container">
-            <div class="card">
-                <div class="card-body">
-                    <h2 class="card-title">Romulo Albuquerque</h2>
-                    <h5 class="card-sub-title">Web Developer</h5>
-                    <div class="contact-buttons">
-                        <a href="" class="text-uppercase contact-button">
-                            <p>Download CV</p>
-                            <i class="fas fa-download"></i>
-                        </a>
-                        <a href="" class="text-uppercase contact-button">
-                            <p>Contact me</p>
-                            <i class="far fa-comment-alt"></i>
-                        </a>
+        <div class="container-fluid about-container">
+            <div class="card main-card about-card">
+                <div class="card-body about-card-body">
+                    <h2 class="card-title about-card-title">About Me</h2>
+                    <div class="circle-mark"></div>
+                    <div class="circle-mark-2"></div>
+                    <div class="circle-mark-3"></div>
+                    <hr>
+                    <div class="card-text">
+                        <p>Pleased to have you seeing my CV! My name is Romulo Albuquerque, Software Development student at Code Institute in Dublin - Ireland. </p>
+                        <p>I am very competitive (especially to myself) but I'm also ethical and don't think I need to step over other people to reach my goals. I have a high drive and energy to back it up.</p>
+                        <p>I enjoy leading through trust, creating the conditions for trust to flourish and helping others. I am always looking to improve myself and being better than yesterday.</p>
+                    </div>
+                    <hr>
+                    <h2 class="card-title about-card-title">Interests</h2>
+                    <hr>
+                    <div class="card-text">
+                        <i class="fas fa-guitar interests-icon"></i>
+                        <h3>Music</h3>
+                        <p>I absolutely love music. I'm a guitarrist, I can also play base guitar and sing. I've also been learning drums, piano/keyboard and harmonica. Still have the violin on the queue.</p>
+
+                        <i class="fas fa-futbol interests-icon"></i>
+                        <h4>Sports</h4>
+                        <p>I played semi-pro American Football as a slot receiver and running back I'm also a red belt in karate. I used to compete in rowing and although I don't watch many foorball games I do enjoy playing.</p>
+                        <p>Last but not least one of my biggest passions is race driving although my experience hasn't passed the go-karting stage I can't explain how good I feel racing. </p>
+
+                        <i class="fas fa-glasses interests-icon"></i>
+                        <h4>Learning</h4>
+                        <p>I'm very curious. I want to know more. From fungi that takes over insects nervous systems to wondering if our big bang means our universe came from the other side of a black hole and not necessarily a massive explosion.</p>
+
+                        <i class="fas fa-tools interests-icon"></i>
+                        <h4>Fixing Things</h4>
+                        <p>I do enjoy fixing things. As a child I did break apart most of my toys (and some innocent home appliances) which had some spare parts when I tried to put them back together. Since I can remember I helped my father fixing the car,
+                            plastering and painting the walls in the house and things like that. We were the real life "Bob the builder". As a result I've been learning more at every fixing attempt as it involves research and gauging my own abilities
+                            against the challenge.</p>
+
+                        <i class="fas fa-pencil-ruler interests-icon"></i>
+                        <h4>Design and Solutions Development</h4>
+                        <p>I'm always looking around for alternatives to our problems. I have been developing solutions that combine existing technologies in a unique way that prioritizes the environment and practicity. They go from small city vehicles with
+                            electric/human propulsion to aquatic public transport with adjustable draft to adapt to shallow sections of rivers and going under bridges.</p>
+                        <p>Since I acquired an arduino board, I've been developing ideas for home automation solutions and some other fun but less useful gadgets such as a light theremin for example.</p>
+                        <div id="small-resume"></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <section id="sidenav-resume" class="sidenav li-1 li-3 li-4">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <h2>Resume</h2>
+        <!--RESUME/WORK HISTORY SECTION-->
+        <div class="container-fluid about-container">
+            <div class="card main-card about-card">
+                <div class="card-body about-card-body">
+                    <h2 class="card-title about-card-title">Resume</h2>
+                    <div class="circle-mark"></div>
+                    <div class="circle-mark-2"></div>
+                    <div class="circle-mark-3"></div>
+                    <hr>
+                    <div class="card-text">
+                        <h3 class="card-title about-card-title">Experience</h3>
+                        <div class="resume-items">
+                            <div class="resume-item">
+                                <div class="job-title">Department Manager</div>
+                                <div class="company-name">Dunnes Stores</div>
+                                <div class="work-date">18/06/2018 - Present</div>
+                                <p>Team building and leading in a high pressured environment, beating budget targets, encouraging team's input to keep and improve standards. Working closely with other Managers to tackle difficult tasks and come up with the
+                                    best solution.</p>
+                            </div>
+                            <div class="resume-item">
+                                <div class="job-title">Department Expert</div>
+                                <div class="company-name">Smyth's Toystores</div>
+                                <div class="work-date">02/11/2015 - 30/07/2017</div>
+                                <p>Team leader, sharing daily tasks and using data to drive decisions. Responsible for staff training and member of the health and safety committee.</p>
+                            </div>
+                            <div class="resume-item">
+                                <div class="job-title">Bilingual Receptionist Trainer</div>
+                                <div class="company-name">Cirque du Soleil/T4F</div>
+                                <div class="work-date">02/2013 - 11/2013</div>
+                                <p>During the Varekai - Brazilian Tour. Through 7 cities, we trained around 840 staff members and over 350 shows literally timed to the second where, due to its risk, trust, consistency and foreplanning are key. Worked also
+                                    as part of a team in long shifts during assembly and disassembly of the structures.</p>
+                            </div>
+                            <div class="resume-item">
+                                <div class="job-title">Volunteering</div>
+                                <div class="company-name">Canine Behaviour</div>
+                                <div class="work-date">2011 - Present</div>
+                                <p>I began volunteering back in Brazil after I adopted my dog and continued here at Dogs Trust and DSPCA.</p>
+                                <p>I studied dog behaviour and I've been using this knowledge and the experience I gathered through the years to help other people to find the right dogs for them.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--EDUCATION SECTION-->
+        <div class="container-fluid about-container">
+            <div class="card main-card about-card">
+                <div class="card-body about-card-body">
+                    <h2 class="card-title about-card-title">Resume</h2>
+                    <div class="circle-mark"></div>
+                    <div class="circle-mark-2"></div>
+                    <div class="circle-mark-3"></div>
+                    <hr>
+                    <div class="card-text">
+                        <h3 class="card-title about-card-title">Education</h3>
+                        <div class="resume-items">
+                            <div class="resume-item">
+                                <div class="job-title">Fullstack Software Development (Diploma)</div>
+                                <div class="company-name">Code Institute</div>
+                                <div class="work-date">07/01/2019 - Present</div>
+                                <p>Currently on the 3rd of 7 modules. The course covers HTML, CSS, JavaScript, Python (Django and Flask), Data Management, GitHub, Agile Development</p>
+                                <p>Equivalent to Level 5 on the European Qualifications Framework and Level 8 on the Scottish Credit and Qualifications Framework. Equivalent to 12 college credits in the US.</p>
+                            </div>
+                            <div class="resume-item">
+                                <div class="job-title">Product Design and Innovation</div>
+                                <div class="company-name">Alison Courses</div>
+                                <div class="work-date">2017</div>
+                                <p>Online course where I learned the steps, methods and challenges of product development. This course also helped me to have a wider vision of my surroundings and finding opportunities for improvement.</p>
+                            </div>
+                            <div class="resume-item">
+                                <div class="job-title">English Courses</div>
+                                <div class="company-name">ICOT College</div>
+                                <div class="work-date">05/03/2015 - 30/07/2017</div>
+                                <p>Advanced level. I had the chance to improve my grammar knowledge and fluency in English.</p>
+                            </div>
+                            <div class="resume-item">
+                                <div class="job-title">EMPRETEC</div>
+                                <div class="company-name">SEBRAE/United Nations</div>
+                                <div class="work-date">2012</div>
+                                <p>Course developed by the United Nations to promote leadership and innovation in developing countries. The course covers creation and maintenance of companies on the ever-changing 21st century, strategies to generate and
+                                    deal with disruptive technologies and/or processes. The course also covers strategies to work with people as a leader or being part of a team and developing the feeling of when to let the team work their way or to step
+                                    in to suggest a change.</p>
+                            </div>
+                            <div class="resume-item">
+                                <div class="job-title">Environmental Control and Management</div>
+                                <div class="company-name">University of Pernambuco State</div>
+                                <div class="work-date">2011</div>
+                                <p>This Post-Graduation course improved my ability to conciliate the urge for development and the need to preserve natural resources. During this course I developed a project for a wind turbine using CVT technology, technically
+                                    eliminating the need for "brakes" to reduce the speed of the turbine, this way converting more energy in electricity.</p>
+                            </div>
+                            <div class="resume-item">
+                                <div class="job-title">Fishing Engineering</div>
+                                <div class="company-name">Federal Rural University of Pernambuco State</div>
+                                <div class="work-date">2005 - 2010</div>
+                                <p>Graduation course covering Advanced Maths, Physics, Chemistry, Genetics, Biology, Physiology, Statistics, Economics, Geology, Natural Resources, Technical Drawing, Product Development, Environmental Studies, Populational
+                                    Studies, Intensive Production Techniques and more.</p>
+                                <p>During these 5 years I worked as an intern in different laboratories within the University such as Population Studies Lab, Aquaculture Development Lab, Genetics Lab, Water Quality Lab and Fishing Technologies Development
+                                    Lab.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--SKILLS SECTION-->
+        <div class="container-fluid about-container">
+            <div class="card main-card about-card">
+                <div class="card-body about-card-body">
+                    <h2 class="card-title about-card-title">Resume</h2>
+                    <div class="circle-mark"></div>
+                    <div class="circle-mark-2"></div>
+                    <div class="circle-mark-3"></div>
+                    <hr>
+                    <div class="card-text">
+                        <h3 class="card-title about-card-title">Skills</h3>
+                        <div class="resume-items">
+                            <i class="fas fa-code resume-icon"></i>
+                            <h5>Software Development</h5>
+                            <div class="progress">
+                                <div class="progress-bar bg-progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p>Skills in progress but you can see <a href="#Portfolio"><b>here</b></a> my first project for the course.</p>
+                            <p><small>Submitted on April 24th and waiting on grade - predicted by my mentor to be first or second class honors.</small></p>
+
+                            <i class="far fa-lightbulb resume-icon"></i>
+                            <h5>Creativity</h5>
+                            <div class="progress">
+                                <div class="progress-bar bg-progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p>I like to believe I'm very creative and I constantly push myself to think outside the box</p>
+
+                            <i class="fas fa-people-carry resume-icon"></i>
+                            <h5>Team Work and Management</h5>
+                            <div class="progress">
+                                <div class="progress-bar bg-progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p>I am a great team player, following directions and respecting colleagues space. I have outstanding team building and interpersonal skills, I enjoy seeing people growing with my help and establishing relationships where trust
+                                goes beyond reliability only and, where natural, extend the friendship beyond work environment.</p>
+
+                            <i class="far fa-handshake resume-icon"></i>
+                            <h5>Negotiation and Persuasion</h5>
+                            <div class="progress">
+                                <div class="progress-bar bg-progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p>As a manager, these traits were highly boosted as I constantly have to negotiate with customers, staff and other managers. I understand the importance of an extensive and accurate knowledge about myself, the customer and the
+                                product we are offering.</p>
+
+                            <i class="far fa-file-alt resume-icon"></i>
+                            <h5>Organization</h5>
+                            <div class="progress">
+                                <div class="progress-bar bg-progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p>I know the value of organization especially regarding shared resources and spaces. I easily adapt to organizational schemes.</p>
+
+                            <i class="far fa-comments resume-icon"></i>
+                            <h5>Communication</h5>
+                            <div class="progress">
+                                <div class="progress-bar bg-progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p>I find easy to talk to people and express myself in a clear concise way.</p>
+                            <div id="small-portfolio"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section id="sidenav-portfolio" class="sidenav li-1 li-2 li-4">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <h2>Portfolio</h2>
+        <div class="container-fluid about-container">
+            <div class="card main-card about-card">
+                <div class="card-body about-card-body">
+                    <h2 class="card-title about-card-title">Portfolio</h2>
+                    <div class="circle-mark"></div>
+                    <div class="circle-mark-2"></div>
+                    <div class="circle-mark-3"></div>
+                    <hr>
+                    <div class="card-text">
+                        <h3 class="card-title about-card-title">Dobi Automation</h3>
+                        <div class="resume-items">
+                            <a target="_blank" href="https://romqrq.github.io/dobi/" class="dobi-thumbnail">
+                                <img src="assets/images/dobi-sshot.png" alt="Dobi website">
+                            </a>
+                            <p>Milestone project 1 of 5 I created the Dobi Automation Solutions after the HTML and CSS modules. It was used a mobile first approach and I prioritized the responsiveness, loading time and intuitivity for this project.</p>
+                            <p>For this project, the minimum requisites were to create a band website (all photo, audio and video files provided by Code Institute) with tour dates, embeded video and/or audio files and a gallery with the bands pictures.</p>
+                            <p>I decided at the begin of the course to go for high honors and to give all I can to make it work and that's what I did. This project came out after two months managing my time between work, studying, social life and occasional
+                                sleep.
+                            </p>
+                            <p>The satisfaction of having this project deployed and submitted made it worth all the research, debugging and days that I could have said I was too tired to do it.</p>
+                            <p>This project was submitted on the 24th of April and I'm waiting on the results.</p>
+                            <hr>
+                            <h3 class="card-title about-card-title">My CV Website</h3>
+                            <div class="resume-items">
+                                <a target="_blank" href="#" class="...">
+                                <img src="..." style="max-width: 100%;" alt="...">
+                            </a>
+                                <p>This very page is my second website and the first where I wrote all the code on my own. I am aware that I'm just at the very beginning of this road, it is long and I can't deny how excited I am.</p>
+                                <p>With a changing colors background and JavaScript interactive animations this website was developed with a mobile-first approach giving great responsiveness but uncompromising the user experience on larger screens.</p>
+                            </div>
+                            <div id="small-contact"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section id="sidenav-contact" class="sidenav li-1 li-2 li-3">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <h2>Contact</h2>
+        <div class="container-fluid about-container">
+            <div class="card main-card about-card">
+                <div class="card-body about-card-body">
+                    <h2 class="card-title about-card-title">Contact</h2>
+                    <div class="circle-mark"></div>
+                    <div class="circle-mark-2"></div>
+                    <div class="circle-mark-3"></div>
+                    <hr>
+                    <div class="card-text">
+                        <h3 class="card-title contact-card-title">Email</h3>
+                        <div class="resume-items">
+                            <h5>rjaalbuquerque@gmail.com</h5>
+                        </div>
+                        <h3 class="card-title contact-card-title">LinkedIn</h3>
+                        <div class="resume-items">
+                            <a href="https://www.linkedin.com/in/romalbuquerque/" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+
+    <!-- menu to open the sidenav -->
+    <!--<section id="sidenav-bar">-->
+    <!--    <div class="container">-->
+    <!--        <ul class="sidenav-buttons-ul">-->
+    <!--            <li class="sidenav-buttons-li">-->
+    <!--                <span onclick="openAbout()" class="sidenav-button">-->
+    <!--                    <i class="fas fa-user"></i>-->
+    <!--                        About-->
+    <!--                    </span>-->
+    <!--                </a>-->
+    <!--            </li>-->
+    <!--            <li class="sidenav-buttons-li">-->
+    <!--                <span onclick="openResume()" class="sidenav-button">-->
+    <!--                    <i class="fas fa-user"></i>-->
+    <!--                        Resume-->
+    <!--                    </span>-->
+    <!--                </a>-->
+    <!--            </li>-->
+    <!--            <li class="sidenav-buttons-li">-->
+    <!--                <span onclick="openPortfolio()" class="sidenav-button">-->
+    <!--                    <i class="fas fa-user"></i>-->
+    <!--                        Portfolio-->
+    <!--                    </span>-->
+    <!--                </a>-->
+    <!--            </li>-->
+    <!--            <li class="sidenav-buttons-li">-->
+    <!--                <span onclick="openContact()" class="sidenav-button">-->
+    <!--                    <i class="fas fa-user"></i>-->
+    <!--                        Contact-->
+    <!--                    </span>-->
+    <!--                </a>-->
+    <!--            </li>-->
+    <!--        </ul>-->
+    <!--    </div>-->
+    <!--</section>-->
+    <!--<section id="sidenav-about" class="sidenav li-2 li-3 li-4">-->
+    <!--    <div class="container-fluid about-card-container">-->
+    <!--        <div class="card">-->
+    <!--            <div class="card-body">-->
+    <!--                <h2 class="card-title">Romulo Albuquerque</h2>-->
+    <!--                <h5 class="card-sub-title">Web Developer</h5>-->
+    <!--                <div class="contact-buttons">-->
+    <!--                    <a href="" class="text-uppercase contact-button">-->
+    <!--                        <p>Download CV</p>-->
+    <!--                        <i class="fas fa-download"></i>-->
+    <!--                    </a>-->
+    <!--                    <a href="" class="text-uppercase contact-button">-->
+    <!--                        <p>Contact me</p>-->
+    <!--                        <i class="far fa-comment-alt"></i>-->
+    <!--                    </a>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</section>-->
+    <!--<section id="sidenav-resume" class="sidenav li-1 li-3 li-4">-->
+    <!--    <div class="container-fluid">-->
+    <!--        <div class="row">-->
+    <!--            <div class="col-12">-->
+    <!--                <h2>Resume</h2>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</section>-->
+    <!--<section id="sidenav-portfolio" class="sidenav li-1 li-2 li-4">-->
+    <!--    <div class="container-fluid">-->
+    <!--        <div class="row">-->
+    <!--            <div class="col-12">-->
+    <!--                <h2>Portfolio</h2>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</section>-->
+    <!--<section id="sidenav-contact" class="sidenav li-1 li-2 li-3">-->
+    <!--    <div class="container-fluid">-->
+    <!--        <div class="row">-->
+    <!--            <div class="col-12">-->
+    <!--                <h2>Contact</h2>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</section>-->
 
     </div>
     </section>

@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu|Righteous');
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     /*background-color: #0366A0;*/
@@ -233,8 +236,8 @@ a {
     width: 1rem;
     border-radius: 50%;
     background-color: rgb(150, 220, 141);
-    margin-top: -31px;
-    margin-left: 78px;
+    margin-top: -47px;
+    margin-left: 41px;
 }
 
 .circle-mark-large {
@@ -243,9 +246,8 @@ a {
     border-radius: 50%;
     background: #238ada57;
     position: absolute;
-    margin-top: -47px;
-    margin-left: 41px;
-    ;
+    top: 31px;
+    left: 12px;
     z-index: 1;
 }
 
@@ -298,6 +300,20 @@ a {
     height: 0.75rem;
     margin: 1rem 0.5rem;
 }
+
+/*CONTACT*/
+
+.contact-card-title {
+    margin: 2rem auto 1rem;
+    font-family: "Righteous", sans-serif;
+    text-shadow: -2px 3px 5px #00000059;
+}
+
+.fa-linkedin {
+    font-size: 5rem;
+    color: #104f6b;
+}
+
 
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
