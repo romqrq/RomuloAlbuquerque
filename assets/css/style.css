@@ -11,6 +11,8 @@ body {
     -moz-animation: Gradient 15s ease infinite;
     animation: Gradient 15s ease infinite;
     font-family: "Ubuntu", sans-serif;
+    max-width: 110rem;
+    margin: auto;
 }
 
 a {
@@ -104,13 +106,13 @@ a {
 }
 
 .sidenav-container {
-    position: absolute;
-    top: 12vh;
-    width: 8rem;
-    height: 60vh;
+    width: 10vw;
+    max-width: 6rem;
+    height: 45vh;
+    max-height: 40rem;
     background-color: #fff;
     border-radius: 15px;
-    margin: 1rem;
+    margin-left: 1rem;
     padding: 0;
     box-shadow: -3px 6px 16px #00000070;
 }
@@ -118,20 +120,18 @@ a {
 /* The side navigation menu */
 
 .sidenav {
-    height: 83vh;
-    top: 10vh;
-    left: 51.5vw;
+    order: 3;
+    height: 68vh;
+    max-height: 33rem;
+    /* top: 8.75vh; */
+    /* left: 2rem; */
     z-index: 1;
     background-color: transparent;
     overflow-x: hidden;
     width: 0;
-    /* 0 width - change this with JavaScript */
-    position: fixed;
-    /* Stay in place */
+    /* position: fixed; */
     overflow-x: hidden;
-    /* Disable horizontal scroll */
     transition: 0.5s;
-    /* 0.5 second transition effect to slide in the sidenav */
     border-radius: 15px;
 }
 
@@ -160,15 +160,33 @@ a {
 }
 
 .sidenav-buttons-li {
-    height: 15vh;
+    width: 100%;
+    height: 11vh;
+    max-height: 10rem;
+}
+
+/*hover for sidenav buttons li*/
+
+.sbli-top.hvr-fade:hover {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.sbli-bottom.hvr-fade:hover {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 .sidenav-button {
     display: flex;
+    height: 100%;
+    width: 100%;
     flex-direction: column;
-    padding: 1.2rem;
-    height: 15vh;
-    box-shadow: 0px 0px 3px 0px #00000038;
+    justify-content: space-evenly;
+}
+
+.sidenav-button p {
+    margin: 0;
 }
 
 .sidenav-button i {
@@ -187,6 +205,8 @@ a {
 
 .main-card-container {
     margin-top: 6rem;
+    max-width: 45rem;
+    max-height: 50rem;
 }
 
 .main-card {
@@ -196,9 +216,17 @@ a {
     box-shadow: -3px 6px 16px #00000070;
 }
 
-.card-body {
+.main-card-body {
     text-align: center;
     padding: 1.5rem 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body {
+    text-align: center;
+    padding: 1rem 0 0;
 }
 
 .card-img-top {
@@ -230,10 +258,12 @@ a {
 
 .main-card-title {
     font-family: "Righteous", sans-serif;
+    margin: auto;
 }
 
 .card-sub-title {
     color: #FF7F11;
+    margin: auto;
 }
 
 .card-text {
@@ -242,15 +272,18 @@ a {
 }
 
 .contact-buttons {
+    height: 6rem;
     width: 100%;
     display: flex;
-    margin: 1rem 0 0.3rem;
+    margin: auto;
 }
 
 .contact-button {
     flex: 1;
-    height: 3rem;
     box-shadow: 0px 0px 2px 0px #00000033;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .text-uppercase p {
@@ -266,7 +299,7 @@ a {
 
 .about-card-body {
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 2rem 3rem;
 }
 
 .about-card-title {
@@ -400,48 +433,75 @@ a {
 }
 
 @media (min-width: 1023px) {
+    body {
+        display: flex;
+        align-items: center;
+        max-height: 56rem;
+        justify-content: center;
+        margin: 7.5vh auto;
+    }
+
     .hidden-large {
         display: none;
     }
-    .main-card-container {
-        margin-top: 7.5vh;
-        width: 40vw;
-        height: 85vh;
-        margin-left: 8.5rem;
+
+    .main-card-large-screen {
+        order: 2;
     }
+
+    .main-card-container {
+        margin: 0;
+        width: 35vw;
+        max-width: 25rem;
+        height: 85vh;
+        max-height: 35rem;
+        order: 2;
+        padding: 0;
+    }
+
     .main-card {
         border-radius: 15px;
         height: 100%;
     }
+
     .card-img-top {
         margin-bottom: -9rem;
-        margin-top: -10rem;
-        height: 70%;
+        margin-top: -18rem;
     }
+
     .profile-picture img {
         max-width: 15rem;
     }
+
     .main-card-title {
-        margin: 1.2rem auto;
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
+
     .card-sub-title {
-        font-size: 2rem;
-        margin: 2rem 0 4rem;
+        font-size: 1.4rem;
     }
-    .text-uppercase p {
-        font-size: 1.3rem;
-    }
+
+    /*.text-uppercase p {*/
+    /*    font-size: 1.3rem;*/
+    /*}*/
     .contact-button i {
         font-size: 2.5rem;
     }
+
     .about-container {
         padding: 0;
         margin: 0;
     }
+
     /*.about-card-body {*/
     /*    height: 80vh;*/
     /*}*/
+    #sidenav-bar {
+        order: 1;
+        height: 45vh;
+        max-height: 40rem;
+    }
+
 }
 
 @media (min-width: 1023px) {
