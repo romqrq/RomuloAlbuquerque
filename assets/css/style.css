@@ -156,12 +156,14 @@ a {
     list-style-type: none;
     text-align: center;
     padding: 0;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    height: 100%;
 }
 
 .sidenav-buttons-li {
     width: 100%;
-    height: 11vh;
+    height: 25%;
     max-height: 10rem;
 }
 
@@ -410,6 +412,17 @@ a {
 }
 
 
+/*LARGESCREEN CONTAINER*/
+
+.large-screen-container {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 90vw;
+    max-width: 94rem;
+    max-height: 40rem;
+}
+
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 
@@ -430,15 +443,16 @@ a {
         max-width: 35rem;
         margin: auto;
     }
+    .lg-screen {
+        display: none;
+    }
 }
 
 @media (min-width: 1023px) {
     body {
         display: flex;
-        align-items: center;
-        max-height: 56rem;
-        justify-content: center;
-        margin: 7.5vh auto;
+        margin: auto;
+        height: 100vh;
     }
 
     .hidden-large {
@@ -446,7 +460,11 @@ a {
     }
 
     .main-card-large-screen {
+        display: none;
+    }
+    .lg-screen {
         order: 2;
+        Display: initial;
     }
 
     .main-card-container {

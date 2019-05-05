@@ -30,6 +30,8 @@ function openContact() {
   document.getElementById("sidenav-contact").style.width = "47vw";
 }
 
+// OPENING ABOUT AUTOMATICALLY
 
-
-
+function loadAbout() {
+  document.getElementById("sidenav-about").style.width = "47vw";
+}
