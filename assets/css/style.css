@@ -121,7 +121,7 @@ a {
 
 .sidenav {
     order: 3;
-    height: 68vh;
+    height: 80vh;
     max-height: 33rem;
     /* top: 8.75vh; */
     /* left: 2rem; */
@@ -308,7 +308,7 @@ a {
 
 .about-card-body {
     text-align: center;
-    padding: 2rem 1rem 2rem 3rem;
+    padding: 2rem;
 }
 
 .about-card-title {
