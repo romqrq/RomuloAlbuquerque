@@ -9,7 +9,7 @@ body {
     background-size: 400vw 300vh;
     -webkit-animation: Gradient 15s ease infinite;
     -moz-animation: Gradient 15s ease infinite;
-    animation: Gradient 15s ease infinite;
+    animation: Gradient 30s ease infinite;
     font-family: "Ubuntu", sans-serif;
     max-width: 110rem;
     margin: auto;
